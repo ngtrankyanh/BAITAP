@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TH05 - NHOM01 - E07</title>
+    <link rel="icon" type="image/x-icon" href="./assets/rocket-icon.ico">
+    <style>
+          body {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fb;
+        }
+        .container {
+            max-width: 1000px;
+            width: 95%;
+            background: #fff;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            border-radius: 10px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        figure { margin: 0; }
+        .infographic { width: 100%; height: auto; border-radius: 8px; display: block; }
+        .video-wrap video { width: 100%; height: auto; border-radius: 8px; background: #000; }
+        figcaption { font-size: 0.95rem; color: #555; margin-top: 8px; }
+        @media (max-width: 700px) {
+            .container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <figure>
+            <img class="infographic" src="./assets/Infographic - Lợi ích Công nghệ.png" alt="Infographic about topic">
+            <figcaption>Infographic: Tóm tắt nội dung chính.</figcaption>
+        </figure>
+
+        <div class="video-wrap">
+            <video controls preload="metadata" poster="./assets/video-poster.jpg">
+                <source src="./assets/video.mp4" type="video/mp4">
+                Trình duyệt không hỗ trợ thẻ video. Tải video tại
+                <a href="./assets/video.mp4">đây</a>.
+            </video>
+            <p style="font-size:0.9rem;color:#666;margin-top:8px;">Video MP4 minh họa nội dung.</p>
+        </div>
+    </div>
+</body>
+</html>
